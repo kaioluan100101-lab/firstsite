@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Sabor & Grãos</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./logo(1).png" alt="logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Avaliações</a>
+                <a href="#address">Endereço</a>
+            </nav>
+
+            <div class="icons">
+                <img width="30" height="30" src="https://img.icons8.com/ios/30/ffffff/search--v1.png" alt="search--v1" />
+
+                <div class="carrinho-icone" onclick="abrirCarrinho()">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png" alt="carrinho"/>
+                    <span id="contador">0</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3>ONDE NASCE O MELHOR CAFÉ DA REGIÃO</h3>
+                <p>Ser o melhor café da região não é apenas um título — é o resultado de dedicação em cada detalhe. Desde a escolha cuidadosa dos grãos até o preparo feito com precisão, tudo é pensado para entregar uma experiência única. Nosso compromisso é oferecer mais do que café: criamos um ambiente acolhedor, onde cada cliente se sinta em casa.</p>
+                <a href="#" class="btn"> Pegue O Seu Agora</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="about" id="about">
+        <h2 class="title">Sobre <span>Nós</span></h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="./onde foto1.jpg" alt="sobre-nos">
+            </div>
+            <div class="content">
+                <h3>O Que Faz Nosso Café Especial</h3>
+                <p>O diferencial está na forma como transformamos o café em uma experiência sensorial completa. Cada xícara entrega notas únicas, equilíbrio e intensidade na medida certa, resultado de um processo cuidadoso que valoriza o sabor real do café. Não se trata apenas de servir, mas de despertar sensações em cada gole.</p>
+                <p>Oferecemos um padrão de excelência perceptível em cada detalhe. Do perfume envolvente ao sabor que permanece no paladar, tudo é pensado para proporcionar uma experiência sofisticada e completa. É essa harmonia entre aroma, sabor e cuidado que torna nosso café verdadeiramente especial.
+                </p>
+                <a href="#" class="btn"> Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="title">Nosso<span>Menu</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="./menu-1.png" alt="item-1">
+                <h3>Espresso Clássico</h3>
+                <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+                <button class="btn" onclick="adicionarItem('Espresso Clássico', 15.99)">Adicione ao Carrinho</button>
+            </div> <div class="box">
+                <img src="./menu-2.png" alt="item-2">
+                <h3>Cappuccino Cremoso</h3>
+                <div class="price">R$ 30,99 <span>R$ 43,45</span></div>
+                <button class="btn" onclick="adicionarItem('Cappuccino Cremoso', 30.99)">Adicione ao Carrinho</button>
+            </div> <div class="box">
+                <img src="./menu-3.png" alt="item-3">
+                <h3>Latte Artesanal</h3>
+                <div class="price">R$ 18,99 <span>R$ 25,19</span></div>
+                <button class="btn" onclick="adicionarItem('Latte Artesanal', 18.99)">Adicione ao Carrinho</button>
+            </div> <div class="box">
+                <img src="./menu-4.png" alt="item-4">
+                <h3>Café Coado Tradicional</h3>
+                <div class="price">R$ 10,99 <span>R$ 15,99</span></div>
+                <button class="btn" onclick="adicionarItem('Café Coado Tradicional', 10.99)">Adicione ao Carrinho</button>
+            </div> <div class="box">
+                <img src="./menu-5.png" alt="item-5">
+                <h3>Mocha Especial</h3>
+                <div class="price">R$ 12,30 <span>R$ 16,99</span></div>
+                <button class="btn" onclick="adicionarItem('Mocha Especial', 12.30)">Adicione ao Carrinho</button>
+            </div> <div class="box">
+                <img src="./menu-6.png" alt="item-6">
+                <h3>Macchiato Italiano</h3>
+                <div class="price">R$ 11,30 <span>R$ 15,99</span></div>
+                <button class="btn" onclick="adicionarItem('Macchiato Italiano', 11.30)">Adicione ao Carrinho</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="review" id="review">
+        <h2 class="title">Nossos <span>Clientes</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="./quote-img.png" alt="comentario">
+                <p>Simplesmente incrível! O aroma já conquista antes mesmo do primeiro gole, e o sabor é extremamente equilibrado. Dá pra ver que é um café de qualidade de verdade.</p>
+                <img src="./pic-1.png" alt="foto-cliente" class="user">
+                <h3>João da Silva</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./quote-img.png" alt="comentario">
+                <p>Ambiente perfeito e café melhor ainda. Cremoso, sabor marcante e nada amargo. Com certeza virou meu lugar favorito pra tomar um bom café.</p>
+                <img src="./pic-2.png" alt="foto-cliente" class="user">
+                <h3>Maria Alice</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./quote-img.png" alt="comentario">
+                <p>Experiência diferenciada! Desde o atendimento até o café, tudo impecável. O cheiro é maravilhoso e o gosto fica no paladar por muito tempo.</p>
+                <img src="./pic-3.png" alt="foto-cliente" class="user">
+                <h3>Rodolfo Mori</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="address" id="address">
+        <h2 class="title">Nosso<span>Endereço</span></h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8674297866905!2d-43.945042482556126!3d-19.929990599999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697c752420587%3A0x9d2cdbd0d4ca778c!2sCRIA%20CAF%C3%89%20Caf%C3%A9s%20Especiais!5e0!3m2!1spt-BR!2sbr!4v1775870965727!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.instagram.com/criacafes/" target="_blank">
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="instagram-new"/>
+            </a>
+            <a href="https://www.facebook.com/criacafe" target="_blank">
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="facebook-new"/>
+            </a>
+            <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/twitterx--v1.png" alt="twitterx--v1"/>
+            </a>
+        </div>
+    </section>
+            <div id="notificacao"></div>
+
+<script>
+    let carrinho = [];
+
+    function adicionarItem(nome, preco) {
+        const itemExistente = carrinho.find(item => item.nome === nome);
+
+        if (itemExistente) {
+            itemExistente.quantidade++;
+        } else {
+            carrinho.push({ nome, preco, quantidade: 1 });
+        }
+
+        atualizarContador();
+        mostrarNotificacao(nome);
+    }
+
+    function atualizarContador() {
+        const total = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
+        const contador = document.getElementById('contador');
+        contador.textContent = total;
+        contador.style.display = total > 0 ? 'flex' : 'none';
+    }
+
+    function mostrarNotificacao(nome) {
+        const notif = document.getElementById('notificacao');
+        notif.textContent = `"${nome}" adicionado!`;
+        notif.classList.add('ativo');
+        setTimeout(() => notif.classList.remove('ativo'), 2500);
+    }
+
+    function abrirCarrinho() {
+        alert('Carrinho: ' + carrinho.map(i => `${i.nome} x${i.quantidade}`).join(', ') || 'Vazio');
+    }
+</script>
+</body>
+
+</html>
