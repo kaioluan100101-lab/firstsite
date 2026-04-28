@@ -16,7 +16,7 @@
     <header class="header">
         <section>
             <a href="#" class="logo">
-                <img src="./logo(1).png" alt="logo">
+                <img src="./novalogo.png" alt="logo">
             </a>
 
             <nav class="navbar">
@@ -28,11 +28,16 @@
             </nav>
 
             <div class="icons">
-                <img width="30" height="30" src="https://img.icons8.com/ios/30/ffffff/search--v1.png" alt="search--v1" />
+                <div id="menu-btn">☰</div>
+                <img width="30" height="30" src="https://img.icons8.com/ios/30/ffffff/search--v1.png"
+                    alt="search--v1" />
 
-                <div class="carrinho-icone" onclick="abrirCarrinho()">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png" alt="carrinho"/>
-                    <span id="contador">0</span>
+                <div class="carrinho-icone" onclick="abrirCarrinho()"
+                    style="position: relative; display: inline-block; cursor: pointer; margin-left: 1.5rem; vertical-align: middle;">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
+                        alt="carrinho" />
+                    <span id="contador"
+                        style="position: absolute; top: -5px; right: -5px; background: #d3ad7f; color: white; border-radius: 50%; width: 18px; height: 18px; display: none; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold;">0</span>
                 </div>
             </div>
         </section>
@@ -42,7 +47,10 @@
         <section id="home">
             <div class="content">
                 <h3>ONDE NASCE O MELHOR CAFÉ DA REGIÃO</h3>
-                <p>Ser o melhor café da região não é apenas um título — é o resultado de dedicação em cada detalhe. Desde a escolha cuidadosa dos grãos até o preparo feito com precisão, tudo é pensado para entregar uma experiência única. Nosso compromisso é oferecer mais do que café: criamos um ambiente acolhedor, onde cada cliente se sinta em casa.</p>
+                <p>Ser o melhor café da região não é apenas um título — é o resultado de dedicação em cada detalhe.
+                    Desde a escolha cuidadosa dos grãos até o preparo feito com precisão, tudo é pensado para entregar
+                    uma experiência única. Nosso compromisso é oferecer mais do que café: criamos um ambiente acolhedor,
+                    onde cada cliente se sinta em casa.</p>
                 <a href="#" class="btn"> Pegue O Seu Agora</a>
             </div>
         </section>
@@ -56,8 +64,13 @@
             </div>
             <div class="content">
                 <h3>O Que Faz Nosso Café Especial</h3>
-                <p>O diferencial está na forma como transformamos o café em uma experiência sensorial completa. Cada xícara entrega notas únicas, equilíbrio e intensidade na medida certa, resultado de um processo cuidadoso que valoriza o sabor real do café. Não se trata apenas de servir, mas de despertar sensações em cada gole.</p>
-                <p>Oferecemos um padrão de excelência perceptível em cada detalhe. Do perfume envolvente ao sabor que permanece no paladar, tudo é pensado para proporcionar uma experiência sofisticada e completa. É essa harmonia entre aroma, sabor e cuidado que torna nosso café verdadeiramente especial.
+                <p>O diferencial está na forma como transformamos o café em uma experiência sensorial completa. Cada
+                    xícara entrega notas únicas, equilíbrio e intensidade na medida certa, resultado de um processo
+                    cuidadoso que valoriza o sabor real do café. Não se trata apenas de servir, mas de despertar
+                    sensações em cada gole.</p>
+                <p>Oferecemos um padrão de excelência perceptível em cada detalhe. Do perfume envolvente ao sabor que
+                    permanece no paladar, tudo é pensado para proporcionar uma experiência sofisticada e completa. É
+                    essa harmonia entre aroma, sabor e cuidado que torna nosso café verdadeiramente especial.
                 </p>
                 <a href="#" class="btn"> Saiba Mais</a>
             </div>
@@ -72,27 +85,33 @@
                 <h3>Espresso Clássico</h3>
                 <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
                 <button class="btn" onclick="adicionarItem('Espresso Clássico', 15.99)">Adicione ao Carrinho</button>
-            </div> <div class="box">
+            </div>
+            <div class="box">
                 <img src="./menu-2.png" alt="item-2">
                 <h3>Cappuccino Cremoso</h3>
                 <div class="price">R$ 30,99 <span>R$ 43,45</span></div>
                 <button class="btn" onclick="adicionarItem('Cappuccino Cremoso', 30.99)">Adicione ao Carrinho</button>
-            </div> <div class="box">
+            </div>
+            <div class="box">
                 <img src="./menu-3.png" alt="item-3">
                 <h3>Latte Artesanal</h3>
                 <div class="price">R$ 18,99 <span>R$ 25,19</span></div>
                 <button class="btn" onclick="adicionarItem('Latte Artesanal', 18.99)">Adicione ao Carrinho</button>
-            </div> <div class="box">
+            </div>
+            <div class="box">
                 <img src="./menu-4.png" alt="item-4">
                 <h3>Café Coado Tradicional</h3>
                 <div class="price">R$ 10,99 <span>R$ 15,99</span></div>
-                <button class="btn" onclick="adicionarItem('Café Coado Tradicional', 10.99)">Adicione ao Carrinho</button>
-            </div> <div class="box">
+                <button class="btn" onclick="adicionarItem('Café Coado Tradicional', 10.99)">Adicione ao
+                    Carrinho</button>
+            </div>
+            <div class="box">
                 <img src="./menu-5.png" alt="item-5">
                 <h3>Mocha Especial</h3>
                 <div class="price">R$ 12,30 <span>R$ 16,99</span></div>
                 <button class="btn" onclick="adicionarItem('Mocha Especial', 12.30)">Adicione ao Carrinho</button>
-            </div> <div class="box">
+            </div>
+            <div class="box">
                 <img src="./menu-6.png" alt="item-6">
                 <h3>Macchiato Italiano</h3>
                 <div class="price">R$ 11,30 <span>R$ 15,99</span></div>
@@ -106,91 +125,192 @@
         <div class="box-container">
             <div class="box">
                 <img src="./quote-img.png" alt="comentario">
-                <p>Simplesmente incrível! O aroma já conquista antes mesmo do primeiro gole, e o sabor é extremamente equilibrado. Dá pra ver que é um café de qualidade de verdade.</p>
+                <p>Simplesmente incrível! O aroma já conquista antes mesmo do primeiro gole, e o sabor é extremamente
+                    equilibrado. Dá pra ver que é um café de qualidade de verdade.</p>
                 <img src="./pic-1.png" alt="foto-cliente" class="user">
                 <h3>João da Silva</h3>
                 <div class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" /><img width="30" height="30"
+                        src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1" /><img width="30"
+                        height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
                 </div>
             </div>
             <div class="box">
                 <img src="./quote-img.png" alt="comentario">
-                <p>Ambiente perfeito e café melhor ainda. Cremoso, sabor marcante e nada amargo. Com certeza virou meu lugar favorito pra tomar um bom café.</p>
+                <p>Ambiente perfeito e café melhor ainda. Cremoso, sabor marcante e nada amargo. Com certeza virou meu
+                    lugar favorito pra tomar um bom café.</p>
                 <img src="./pic-2.png" alt="foto-cliente" class="user">
                 <h3>Maria Alice</h3>
                 <div class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" /><img width="30" height="30"
+                        src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1" /><img width="30"
+                        height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
                 </div>
             </div>
             <div class="box">
                 <img src="./quote-img.png" alt="comentario">
-                <p>Experiência diferenciada! Desde o atendimento até o café, tudo impecável. O cheiro é maravilhoso e o gosto fica no paladar por muito tempo.</p>
+                <p>Experiência diferenciada! Desde o atendimento até o café, tudo impecável. O cheiro é maravilhoso e o
+                    gosto fica no paladar por muito tempo.</p>
                 <img src="./pic-3.png" alt="foto-cliente" class="user">
                 <h3>Rodolfo Mori</h3>
                 <div class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/><img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" /><img width="30" height="30"
+                        src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1" /><img width="30"
+                        height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
                 </div>
             </div>
         </div>
     </section>
     <section class="address" id="address">
         <h2 class="title">Nosso<span>Endereço</span></h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8674297866905!2d-43.945042482556126!3d-19.929990599999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697c752420587%3A0x9d2cdbd0d4ca778c!2sCRIA%20CAF%C3%89%20Caf%C3%A9s%20Especiais!5e0!3m2!1spt-BR!2sbr!4v1775870965727!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8674297866905!2d-43.945042482556126!3d-19.929990599999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697c752420587%3A0x9d2cdbd0d4ca778c!2sCRIA%20CAF%C3%89%20Caf%C3%A9s%20Especiais!5e0!3m2!1spt-BR!2sbr!4v1775870965727!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="footer">
         <div class="share">
             <a href="https://www.instagram.com/criacafes/" target="_blank">
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="instagram-new"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
+                    alt="instagram-new" />
             </a>
             <a href="https://www.facebook.com/criacafe" target="_blank">
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="facebook-new"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"
+                    alt="facebook-new" />
             </a>
-            <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/twitterx--v1.png" alt="twitterx--v1"/>
+            <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/twitterx--v1.png"
+                    alt="twitterx--v1" />
             </a>
         </div>
+
     </section>
-            <div id="notificacao"></div>
+    <div id="notificacao"></div>
 
-<script>
-    let carrinho = [];
+    <div id="carrinho-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharCarrinho()">&times;</span>
+            <h2 class="title" style="font-size: 2.5rem; margin-bottom: 2rem;">Seu <span>Carrinho</span></h2>
 
-    function adicionarItem(nome, preco) {
-        const itemExistente = carrinho.find(item => item.nome === nome);
+            <div id="itens-carrinho"></div>
 
-        if (itemExistente) {
-            itemExistente.quantidade++;
-        } else {
-            carrinho.push({ nome, preco, quantidade: 1 });
+            <div class="total"
+                style="font-size: 2rem; color: #fff; margin: 2rem 0; border-top: var(--border); padding-top: 1rem;">
+                Total: <span style="color: var(--main-color);">R$ <span id="valor-total">0.00</span></span>
+            </div>
+
+            <button class="btn" style="width: 100%;" onclick="finalizarCompra()">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <script>
+        let carrinho = [];
+
+        function adicionarItem(nome, preco) {
+            const itemExistente = carrinho.find(item => item.nome === nome);
+            if (itemExistente) {
+                itemExistente.quantidade++;
+            } else {
+                carrinho.push({ nome, preco, quantidade: 1 });
+            }
+            atualizarContador();
+            mostrarNotificacao(nome);
         }
 
-        atualizarContador();
-        mostrarNotificacao(nome);
-    }
+        function atualizarContador() {
+            const total = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
+            const contador = document.getElementById('contador');
+            if (contador) {
+                contador.textContent = total;
+                contador.style.display = total > 0 ? 'flex' : 'none';
+            }
+        }
 
-    function atualizarContador() {
-        const total = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
-        const contador = document.getElementById('contador');
-        contador.textContent = total;
-        contador.style.display = total > 0 ? 'flex' : 'none';
-    }
+        function mostrarNotificacao(nome) {
+            const notif = document.getElementById('notificacao');
+            notif.textContent = `"${nome}" adicionado!`;
+            notif.classList.add('ativo');
+            setTimeout(() => notif.classList.remove('ativo'), 2500);
+        }
 
-    function mostrarNotificacao(nome) {
-        const notif = document.getElementById('notificacao');
-        notif.textContent = `"${nome}" adicionado!`;
-        notif.classList.add('ativo');
-        setTimeout(() => notif.classList.remove('ativo'), 2500);
-    }
+        function abrirCarrinho() {
+            const modal = document.getElementById('carrinho-modal');
+            const container = document.getElementById('itens-carrinho');
+            const totalElement = document.getElementById('valor-total');
 
-    function abrirCarrinho() {
-        alert('Carrinho: ' + carrinho.map(i => `${i.nome} x${i.quantidade}`).join(', ') || 'Vazio');
-    }
-</script>
+            modal.style.display = 'flex';
+            container.innerHTML = '';
+            let total = 0;
+
+            if (carrinho.length === 0) {
+                container.innerHTML = '<p style="color:#fff; font-size:1.6rem;">Seu carrinho está vazio.</p>';
+            }
+
+            carrinho.forEach((item, index) => {
+                total += item.preco * item.quantidade;
+                container.innerHTML += `
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); color: white; font-size: 1.6rem;">
+                                <span>${item.nome} (x${item.quantidade})</span>
+                                <span>R$ ${(item.preco * item.quantidade).toFixed(2)}</span>
+                                <button onclick="removerItem(${index})" style="background: #ff4d4d; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px;">Remover</button>
+                            </div>
+                        `;
+            });
+            totalElement.textContent = total.toFixed(2);
+        }
+
+        function fecharCarrinho() {
+            document.getElementById('carrinho-modal').style.display = 'none';
+        }
+
+        function removerItem(index) {
+            if (carrinho[index].quantidade > 1) {
+                carrinho[index].quantidade--;
+            } else {
+                carrinho.splice(index, 1);
+            }
+            atualizarContador();
+            abrirCarrinho();
+            if (carrinho.length === 0) {
+                setTimeout(fecharCarrinho, 500);
+            }
+        }
+
+        function finalizarCompra() {
+            if (carrinho.length > 0) {
+                mostrarNotificacao("Pedido enviado com sucesso!");
+                carrinho = [];
+                atualizarContador();
+                fecharCarrinho();
+            }
+        }
+        window.onclick = function (event) {
+            const modal = document.getElementById('carrinho-modal');
+            if (event.target === modal) {
+                fecharCarrinho();
+            }
+        }
+        const menuBtn = document.getElementById('menu-btn');
+const navbar = document.querySelector('.navbar');
+
+menuBtn.onclick = () => {
+    navbar.classList.toggle('active');
+}
+    </script>
 </body>
 
 </html>
